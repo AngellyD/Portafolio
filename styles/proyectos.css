@@ -1,0 +1,112 @@
+#proyectos{
+    padding-top: 4.2%;
+}
+
+.cont-proyectos {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para mejorar la legibilidad */
+    margin: 0vh 7vh;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+}
+
+.cont-proyectos h1 {
+    text-align: center;
+}
+
+.box-container{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    gap: 0.5rem;
+    padding: 2rem 0; 
+}
+
+.portfolio-item{
+    border-radius: 0.5rem;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio-item .content{
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+}
+
+.portfolio-item .content h4{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--purple);
+    transform-origin: top;
+    -webkit-transform: translateY(-10rem);
+            transform: translateY(-10rem);
+    opacity: 0;
+    padding-bottom: 1rem;
+    -webkit-transition: all 0.4s linear;
+       -moz-transition: all 0.4s linear;
+         -o-transition: all 0.4s linear;
+            transition: all 0.4s linear;
+}
+
+.portfolio-item .content p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--white);
+    transform-origin: top;
+    -webkit-transform: translateY(-10rem);
+            transform: translateY(-10rem);
+    opacity: 0;
+    -webkit-transition: all 0.4s linear;
+       -moz-transition: all 0.4s linear;
+         -o-transition: all 0.4s linear;
+            transition: all 0.4s linear;
+}
+
+.portfolio-item:hover .content{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+.portfolio-item:hover .content h4{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio-item:hover .content p{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio-item:hover img{
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+}

@@ -1,0 +1,22 @@
+#contacto{
+    padding-top: 4.2%;
+}
+
+.cont-contacto {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para mejorar la legibilidad */
+    margin: 0vh 7vh;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+}
+
+.cont-contacto h1 {
+    text-align: center;
+}
+
+.contact-info{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    gap: 0.5rem;
+    padding: 2rem 0; 
+}

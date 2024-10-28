@@ -1,0 +1,71 @@
+#educacion{
+    padding-top: 4.2%;
+}
+
+.cont-educacion {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para mejorar la legibilidad */
+    margin: 0vh 7vh;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+}
+
+.cont-educacion h1 {
+    text-align: center;
+}
+
+/* Línea de tiempo */
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: #743972ff;
+    transform: translateX(-50%);
+}
+
+/* Elemento de la línea de tiempo */
+.timeline-item {
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.timeline-item .timeline-content {
+    padding: 1rem;
+    background-color: #1094e0ce;
+    border-radius: 6px;
+    position: relative;
+    width: 45%;
+    text-align: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 55%;
+    text-align: right;
+}
+
+/* Conectores entre elementos */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #743972ff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
